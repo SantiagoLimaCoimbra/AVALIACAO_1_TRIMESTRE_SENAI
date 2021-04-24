@@ -1,0 +1,53 @@
+/* EXERCÍCIO 1 */
+create database facebook;
+use faceboock;
+
+create table CONTA (
+	IDconta int primary key auto_increment,
+	nome varchar(25),
+	sobreNome varchar(50),
+	email varchar(50),
+	senha varchar(30),
+	DTnascimento date,
+	sexo char(1),
+	Primary key(IDconta)
+);
+
+/* EXERCÍCIO 2 */
+create database escola;
+use escola;
+
+create table ALUNO (
+	IDaluno int primary key auto_increment,
+	nome varchar(50),
+	Primary key(IDaluno)
+);
+
+/* EXERCÍCIO 3 */
+create database estacionamento;
+use estacionamento;
+
+create table CARRO (
+	IDcarro int prymary key auto_increment,
+	marca varchar(10),
+	modelo varchar(10),
+	ano Fabricacao int(4),
+	anoModelo int(4),
+	placa varchar(7),
+	cor varchar(10),
+	numeroChassi varchar(17),
+	Primary key(IDcarro)
+);
+
+/* EXERCÍCIO 4 */
+create database biblioteca;
+use biblioteca;
+
+create table LIVRO (
+	IDlivro int primary key auto_increment,
+	titulo varchar(50),
+	autor varchar(50),
+	editora varchar(50),
+	anoPublicacao int(4),
+	Primary key(IDlivro)
+);
